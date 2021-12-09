@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+body {
+  background: var(--body-bg-color);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 15rem;
+}
+
+/* Cards */
+
+.card {
+  background: var(--text-color);
+
+  max-width: 18rem;
+  max-height: auto;
+
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+}
+
+.card h3 {
+  color: var(--bg-button-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.card p {
+  color: var(--body-bg-color);
+  font-size: 0.9rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--body-bg-color);
+  text-transform: uppercase;
+  font-weight: 600;
+
+  background: var(--title-color);
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+
+  box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* swiper */
+
+.swiper {
+  margin-top: 4rem;
+  width: 50rem;
+  height: 25rem;
+}
+
+.swiper-slide {
+  height: auto;
+  margin-left: 2rem;
+  padding: 4rem 1rem;
+}
+
+/* BACK */
+
+.back a {
+  cursor: pointer;
+
+  color: var(--bg-button-color);
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.back {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.back a {
+  position: relative;
+}
+
+.back a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--bg-button-color);
+
+  position: absolute;
+  top: 1.5rem;
+  bottom: -1rem;
+  transition: width 0.3s;
+}
+
+.back a:hover::before {
+  width: 100%;
+}

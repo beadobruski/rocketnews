@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
 
     <title>RocketNews.</title>
   </head>
@@ -19,7 +19,7 @@
       <div class="wrapper">
         <div class="container">
           <header>
-            <img src="assets/logo.svg" alt="Logo da RocketNews" />
+            <img src="/assets/logo.svg" alt="Logo da RocketNews" />
           </header>
           <div class="text">
             <h2>atualize ideias e informações em 5 minutos.</h2>
@@ -37,20 +37,26 @@
                 <input type="email" name="email" id="email" placeholder="oi@rocketseat.com" />
 
                 <button type="submit">
-                  <img src="assets/send.svg" alt="Botão de Enviar" />
+                  <img src="/assets/send.svg" alt="Botão de Enviar" />
                 </button>
               </div>
             </form>
           </div>
 
           <div class="link">
-            <a href="#">
+            <a href="/news.html" class="active">
               deixe-me ler primeiro
-              <img src="assets/arrow-right.svg" alt="Seta pro lado" />
+              <img src="/assets/arrow-right.svg" alt="Seta pro lado" />
             </a>
           </div>
         </div>
       </div>
+
+      <!-- ScrolReveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- Script's -->
+      <script src="/script.js"></script>
     </main>
   </body>
 </html>

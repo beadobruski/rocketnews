@@ -13,15 +13,15 @@
   --bg-button-color: #8257e5;
 }
 
+/* ======== Global Infos =========*/
+
 div.wrapper {
   display: flex;
   height: 100vh;
 }
 
-/* ======== Global Infos =========*/
-
 body {
-  background: url(assets/read_news.jpg) no-repeat;
+  background: url(/assets/read_news.jpg) no-repeat;
   background-position: top right;
   background-size: cover;
 }
@@ -111,7 +111,7 @@ header {
 
 /* ======== Link Infos =========*/
 
-.container a {
+.link a {
   cursor: pointer;
 
   display: flex;
@@ -122,10 +122,30 @@ header {
   font-weight: 700;
 }
 
-.container a img {
+.link a img {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.3125rem;
+}
+
+.link a {
+  position: relative;
+}
+
+.link a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--bg-button-color);
+
+  position: absolute;
+  top: 1.5rem;
+  bottom: -1rem;
+  transition: width 0.3s;
+}
+
+.link a:hover::after {
+  width: 25%;
 }
 
 /* ======== Media Queries =========*/
@@ -133,6 +153,10 @@ header {
 @media (max-width: 1500px) {
   .input-btn {
     width: 50rem;
+  }
+
+  .link a:hover::after {
+    width: 40%;
   }
 }
 
@@ -149,11 +173,19 @@ header {
   .input-btn {
     width: 90%;
   }
+
+  .link a:hover::after {
+    width: 60%;
+  }
 }
 
 @media (max-width: 549px) {
   body {
     background: var(--body-bg-color);
+  }
+
+  .container header {
+    margin-bottom: 3rem;
   }
 
   .container header img {
@@ -189,5 +221,9 @@ header {
 
   .container .email-form form label {
     font-size: 0.9rem;
+  }
+
+  .link a:hover::after {
+    width: 50%;
   }
 }

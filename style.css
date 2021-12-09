@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+div.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* ======== Global Infos =========*/
+
+body {
+  background: url(/rocketnews/assets/read_news.jpg) no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+  padding: 3rem 5rem;
+  background: var(--body-bg-color);
+  position: relative;
+}
+
+/* ======== Header =========*/
+
+header {
+  margin-bottom: 5.625rem;
+}
+
+/* ======== Text Infos =========*/
+
+.container .text h2 {
+  color: var(--title-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.7rem;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+.container .text h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.container .text p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.container .text {
+  margin-bottom: 3.125rem;
+}
+
+/* ======== Form Infos =========*/
+
+.container .email-form {
+  margin-bottom: 3.5rem;
+}
+
+.container .email-form form label {
+  display: block;
+
+  color: var(--form-color);
+  font-weight: 700;
+  font-size: 0.875;
+
+  margin-bottom: 1.0675rem;
+}
+
+.container .email-form form input[type='email'] {
+  width: 60rem;
+  height: 3.5rem;
+
+  outline: none;
+  border: none;
+
+  border-left: 10px solid var(--title-color);
+}
+
+.container .email-form .input-btn {
+  display: inline-flex;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+.container .email-form .input-btn button {
+  display: flex;
+  align-items: center;
+
+  background: var(--bg-button-color);
+  border: none;
+
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/* ======== Link Infos =========*/
+
+.container a {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  color: var(--bg-button-color);
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.container a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.3125rem;
+}
+
+/* ======== Media Queries =========*/
+
+@media (max-width: 1500px) {
+  .input-btn {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    width: 100vw;
+  }
+  .input-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 802px) {
+  .input-btn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 3rem;
+  }
+
+  .input-btn {
+    width: 100%;
+  }
+}

@@ -21,7 +21,7 @@ div.wrapper {
 /* ======== Global Infos =========*/
 
 body {
-  background: url(/assets/read_news.jpg) no-repeat;
+  background: url(assets/read_news.jpg) no-repeat;
   background-position: top right;
   background-size: cover;
 }

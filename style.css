@@ -21,7 +21,7 @@ div.wrapper {
 /* ======== Global Infos =========*/
 
 body {
-  background: url(/rocketnews/assets/read_news.jpg) no-repeat;
+  background: url(/assets/read_news.jpg) no-repeat;
   background-position: top right;
   background-size: cover;
 }
@@ -130,6 +130,12 @@ header {
 
 /* ======== Media Queries =========*/
 
+@media (max-width: 2560px) {
+  .input-btn #email {
+    width: 83rem;
+  }
+}
+
 @media (max-width: 1500px) {
   .input-btn {
     width: 50rem;
@@ -151,7 +157,16 @@ header {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 375px) {
+  .container header img {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
   .container {
     width: 100vw;
     height: 100vh;
@@ -160,5 +175,9 @@ header {
 
   .input-btn {
     width: 100%;
+  }
+
+  body {
+    background: var(--body-bg-color);
   }
 }

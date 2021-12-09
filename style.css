@@ -21,7 +21,7 @@ div.wrapper {
 /* ======== Global Infos =========*/
 
 body {
-  background: url(assets/read_news.jpg) no-repeat;
+  background: url(/assets/read_news.jpg) no-repeat;
   background-position: top right;
   background-size: cover;
 }
@@ -130,19 +130,13 @@ header {
 
 /* ======== Media Queries =========*/
 
-@media (max-width: 2560px) {
-  .input-btn #email {
-    width: 83rem;
-  }
-}
-
 @media (max-width: 1500px) {
   .input-btn {
     width: 50rem;
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
   .container {
     width: 100vw;
   }
@@ -157,7 +151,11 @@ header {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 549px) {
+  body {
+    background: var(--body-bg-color);
+  }
+
   .container header img {
     width: 100%;
   }
@@ -170,14 +168,26 @@ header {
   .container {
     width: 100vw;
     height: 100vh;
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
   }
 
-  .input-btn {
-    width: 100%;
+  .container .text h2 {
+    font-size: 1.5rem;
   }
 
-  body {
-    background: var(--body-bg-color);
+  .container .text h3 {
+    font-size: 0.9rem;
+  }
+
+  .container .text p {
+    font-size: 0.8rem;
+  }
+
+  .container .email-form {
+    margin-bottom: 1.5rem;
+  }
+
+  .container .email-form form label {
+    font-size: 0.9rem;
   }
 }

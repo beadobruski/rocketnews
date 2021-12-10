@@ -6,6 +6,10 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
   keyboard: true,
 
+  autoplay: {
+    delay: 2500
+  },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'

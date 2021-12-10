@@ -76,6 +76,11 @@ header img {
   padding: 0.5rem;
 
   box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s;
+}
+
+.card a:hover {
+  background: #31df7f;
 }
 
 /* swiper */
@@ -126,4 +131,44 @@ header img {
 
 .back a:hover::before {
   width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 802px) {
+  .swiper {
+    margin-top: 6rem;
+    width: 100vw;
+    height: 23rem;
+  }
+}
+
+@media (max-width: 549px) {
+  .card .text {
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card p {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .card a {
+    text-align: center;
+  }
+
+  .swiper {
+    margin-top: 6rem;
+    width: 100vw;
+    height: 23rem;
+  }
+
+  .swiper-slide {
+    padding: 4rem 1rem;
+  }
 }

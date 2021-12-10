@@ -11,12 +11,13 @@
   --title-color: #04d361;
   --form-color: #a8a8a8;
   --bg-button-color: #8257e5;
+
+  --swiper-theme-color: #8257e5;
 }
 
 body {
   background: var(--body-bg-color);
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .container {
@@ -40,8 +41,8 @@ header img {
 .card {
   background: var(--text-color);
 
-  max-width: 18rem;
-  max-height: auto;
+  width: 18rem;
+  height: auto;
 
   margin-bottom: 2rem;
   border-radius: 0.5rem;
@@ -144,6 +145,10 @@ header img {
 }
 
 @media (max-width: 549px) {
+  .container {
+    margin-bottom: 9rem;
+  }
+
   .card .text {
     max-height: auto;
     display: flex;
@@ -169,6 +174,11 @@ header img {
   }
 
   .swiper-slide {
+    /* height: 0; */
     padding: 4rem 1rem;
+  }
+
+  .swiper-slide-next:last-child {
+    visibility: hidden;
   }
 }

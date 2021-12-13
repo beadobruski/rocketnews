@@ -7,6 +7,8 @@
 Minha intenção foi estudar mais a fundo e adicionar mais funcionalidades ao layout.
 
 
+## Deploy
+Veja o deploy do meu projeto por aqui: <a href="https://rocketnewws.netlify.app/">RocketNews</a>. 🚀
 
 
 ## 🛠 Tecnologias

@@ -307,4 +307,8 @@ header img {
   .content {
     width: 90%;
   }
+
+  .modal {
+    margin: 0 1rem;
+  }
 }

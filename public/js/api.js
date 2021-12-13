@@ -4,9 +4,8 @@ function fetchApiData() {
     .then(data => {
       const modal = document.querySelector('.modal');
       const p = document.createElement('p');
-
       const createPhrase = (p.innerHTML = data.activity);
 
-      modal.innerHTML += createPhrase;
+      modal.innerHTML += `${createPhrase}<br>`;
     });
 }

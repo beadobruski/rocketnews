@@ -11,6 +11,7 @@
   --title-color: #04d361;
   --form-color: #a8a8a8;
   --bg-button-color: #8257e5;
+  --error-email-color: hsl(0, 100%, 46%);
 }
 
 /* ======== Global Infos =========*/
@@ -21,7 +22,7 @@ div.wrapper {
 }
 
 body {
-  background: url(/assets/read_news.jpg) no-repeat;
+  background: url(/public/img/read_news.jpg) no-repeat;
   background-position: top right;
   background-size: cover;
 }
@@ -109,30 +110,47 @@ header {
   cursor: pointer;
 }
 
+/* Validating Form Field */
+
+.error-email {
+  border: 2px solid var(--error-email-color) !important;
+  border-left: 10px solid var(--title-color) !important;
+}
+
+.container .email-form .error-text {
+  color: var(--error-email-color);
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  position: absolute;
+}
+
 /* ======== Link Infos =========*/
 
-.link a {
-  cursor: pointer;
+/* BACK */
 
+.back {
+  margin-top: 5rem;
+}
+
+.back a {
   display: flex;
   align-items: center;
+  position: absolute;
+
+  cursor: pointer;
+
   color: var(--bg-button-color);
   text-decoration: none;
 
   font-weight: 700;
 }
 
-.link a img {
-  width: 1.5rem;
-  height: 1.5rem;
+.back a img {
   margin-left: 0.3125rem;
 }
 
-.link a {
-  position: relative;
-}
-
-.link a::after {
+.back a::before {
   content: '';
   width: 0%;
   height: 2px;
@@ -144,8 +162,8 @@ header {
   transition: width 0.3s;
 }
 
-.link a:hover::after {
-  width: 25%;
+.back a:hover::before {
+  width: 100%;
 }
 
 /* ======== Media Queries =========*/
@@ -153,10 +171,6 @@ header {
 @media (max-width: 1500px) {
   .input-btn {
     width: 50rem;
-  }
-
-  .link a:hover::after {
-    width: 40%;
   }
 }
 
@@ -173,10 +187,6 @@ header {
   .input-btn {
     width: 90%;
   }
-
-  .link a:hover::after {
-    width: 60%;
-  }
 }
 
 @media (max-width: 549px) {
@@ -185,7 +195,7 @@ header {
   }
 
   .container header {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   .container header img {
@@ -223,7 +233,8 @@ header {
     font-size: 0.9rem;
   }
 
-  .link a:hover::after {
-    width: 50%;
+  .container .email-form .error-text {
+    position: relative;
+    margin-bottom: 1.5rem;
   }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketNews.</title>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,16 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/public/styles/style.css" />
 
-    <title>RocketNews.</title>
+    <!-- Seo -->
+    <link rel="shortcut icon" href="/public/img/favico.svg" type="image/x-icon" />
+    <meta name="author" content="Bea Dobruski" />
+    <meta name="description" content="O RocketNews é um website que dá informações sobre as notícias de programação. Esteja preparado para começar a codar." />
   </head>
+
   <body>
     <main>
       <div class="wrapper">
         <div class="container">
           <header>
-            <img src="/assets/logo.svg" alt="Logo da RocketNews" />
+            <a href="/index.html">
+              <img src="/public/img/logo.svg" alt="Logo da RocketNews" />
+            </a>
           </header>
           <div class="text">
             <h2>atualize ideias e informações em 5 minutos.</h2>
@@ -30,24 +37,24 @@
           </div>
 
           <div class="email-form">
-            <form action="">
+            <form method="" action="" class="form">
               <label id="email-label" for="email">Insira seu e-mail:</label>
 
               <div class="input-btn">
-                <input type="email" name="email" id="email" placeholder="oi@rocketseat.com" />
+                <input type="email" name="email" id="email" placeholder="oi@rocketseat.com" required />
 
-                <button type="submit">
-                  <img src="/assets/send.svg" alt="Botão de Enviar" />
+                <button type="submit" class="submit-button">
+                  <img src="/public/img/send.svg" alt="Botão de Enviar" />
                 </button>
               </div>
             </form>
+            <p class="error-text"></p>
           </div>
 
-          <div class="link">
-            <a href="/news.html" class="active">
-              deixe-me ler primeiro
-              <img src="/assets/arrow-right.svg" alt="Seta pro lado" />
-            </a>
+          <div class="back">
+            <p>
+              <a href="/news.html">deixe-me ler primeiro <img src="/public/img/arrow-right.svg" alt="Seta pro lado" /></a>
+            </p>
           </div>
         </div>
       </div>
@@ -56,7 +63,7 @@
       <script src="https://unpkg.com/scrollreveal"></script>
 
       <!-- Script's -->
-      <script src="/script.js"></script>
+      <script src="/public/js/script.js"></script>
     </main>
   </body>
 </html>

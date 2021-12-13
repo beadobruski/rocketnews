@@ -25,7 +25,22 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
   `header img, .swiper .card,
-  .back 
+  .task, .back
   `,
   { interval: 100, easing: 'ease-out', scale: 0.85 }
 );
+
+// Task Generator Modal
+
+const Modal = {
+  open() {
+    // Abrir modal
+    // Adicionar a class active ao modal
+    document.querySelector('.modal-overlay').classList.add('active');
+  },
+  close() {
+    // fechar o modal
+    // remover a class active do modal
+    document.querySelector('.modal-overlay').classList.remove('active');
+  }
+};

@@ -1,123 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <!--  Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="/public/styles/news.css" />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="/styles/news.css" />
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-  <!-- SwiperJS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>News - RocketNews.</title>
+  </head>
 
-  <title>News - RocketNews.</title>
-</head>
-
-<body>
-  <header>
-    <img src="/assets/rocketnews.svg" alt="Logo da RocketNews" />
-  </header>
-  <div class="container">
-    <main>
-      <section>
-        <div class="swiper">
-          <div class="cards swiper-wrapper">
-            
-            <div class="card swiper-slide">
-              <div class="text">
-                <h3>
-                  Como renomear vários arquivos de uma vez usando o terminal
-                </h3>
-                <p>
-                  Suponha que seu projeto tenha uma base de código com 150
-                  arquivos JavaScript e você precisar migrar para TypeScript
-                  alterando as extensões dos arquivos. 🤔
-                </p>
-
+  <body>
+    <header>
+      <img src="/public/img/rocketnews.svg" alt="Logo da RocketNews" />
+    </header>
+    <div class="container">
+      <main>
+        <section>
+          <div class="swiper">
+            <div class="cards swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="text">
+                  <h3>Como renomear vários arquivos de uma vez usando o terminal</h3>
+                  <p>Suponha que seu projeto tenha uma base de código com 150 arquivos JavaScript e você precisar migrar para TypeScript alterando as extensões dos arquivos. 🤔</p>
+                </div>
+                <a href="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/ " target="_blank">saiba mais</a>
               </div>
-              <a href="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/ "
-                target="_blank">saiba mais</a>
-            </div>
 
-            <div class="card swiper-slide">
-              <div class="text">
-                <h3>Upload de imagens no S3 da AWS com Node.js</h3>
-                <p>
-                  Em 10 passos vamos implementar uma API em Node.js que irá
-                  fazer upload de imagens em uma pasta temporária no servidor
-                  local e também no serviço S3 (Simple Storage Service) da AWS
-                  (Amazon Web Services).
-                </p>
-
+              <div class="card swiper-slide">
+                <div class="text">
+                  <h3>Upload de imagens no S3 da AWS com Node.js</h3>
+                  <p>Em 10 passos vamos implementar uma API em Node.js que irá fazer upload de imagens em uma pasta temporária no servidor local e também no serviço S3 (Simple Storage Service) da AWS (Amazon Web Services).</p>
+                </div>
+                <a href="https://blog.rocketseat.com.br/upload-de-imagens-no-s3-da-aws-com-node-js/" target="_blank">saiba mais</a>
               </div>
-              <a href="https://blog.rocketseat.com.br/upload-de-imagens-no-s3-da-aws-com-node-js/" target="_blank">saiba
-                mais</a>
-            </div>
 
-            <div class="card swiper-slide">
-              <div class="text">
-                <h3>
-                  Construindo App com Mapa usando React Native Maps e MapBox
-                </h3>
-                <p>
-                  Trabalhar com mapas em aplicações móveis é bem divertido e
-                  existem vários casos de uso interessantes para aplicar.
-                </p>
-
+              <div class="card swiper-slide">
+                <div class="text">
+                  <h3>Construindo App com Mapa usando React Native Maps e MapBox</h3>
+                  <p>Trabalhar com mapas em aplicações móveis é bem divertido e existem vários casos de uso interessantes para aplicar.</p>
+                </div>
+                <a href="https://blog.rocketseat.com.br/construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox/" target="_blank">saiba mais</a>
               </div>
-              <a href="https://blog.rocketseat.com.br/construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox/"
-                target="_blank">saiba mais</a>
-            </div>
 
-            <div class="card swiper-slide">
-              <div class="text">
-                <h3>
-                  Criando um Blog com contador de visitas usando NextJS e
-                  MongoDB
-                </h3>
-                <p>
-                  Neste post vamos aprender a criar um Blog com NextJS, usando o
-                  MongoDB para gerenciar um contador de visitas em cada post e
-                  exibir no preview da home page.
-                </p>
-
+              <div class="card swiper-slide">
+                <div class="text">
+                  <h3>Criando um Blog com contador de visitas usando NextJS e MongoDB</h3>
+                  <p>Neste post vamos aprender a criar um Blog com NextJS, usando o MongoDB para gerenciar um contador de visitas em cada post e exibir no preview da home page.</p>
+                </div>
+                <a href="https://blog.rocketseat.com.br/criando-um-blog-com-contador-de-visitas-usando-nextjs-e-mongodb/" target="_blank">saiba mais</a>
               </div>
-              <a href="https://blog.rocketseat.com.br/criando-um-blog-com-contador-de-visitas-usando-nextjs-e-mongodb/"
-                target="_blank">saiba mais</a>
-            </div>
 
-            <div class="card swiper-slide">
-              <div class="text">
-                <h3>Mapas com React usando Leaflet</h3>
-                <p>
-                  Neste post vamos desenvolver uma página web para demonstrar,
-                  na prática, a integração de Mapas em uma aplicação com React
-                  usando Leaflet.
-                </p>
-
+              <div class="card swiper-slide">
+                <div class="text">
+                  <h3>Mapas com React usando Leaflet</h3>
+                  <p>Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet.</p>
+                </div>
+                <a href="https://blog.rocketseat.com.br/mapas-com-react-usando-leaflet/" target="_blank">saiba mais</a>
               </div>
-              <a href="https://blog.rocketseat.com.br/mapas-com-react-usando-leaflet/" target="_blank">saiba mais</a>
             </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </section>
-      <div class="back">
-        <p>
-          <a href="/index.html">voltar pra página inicial</a>
-            </p>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
+
+        <section class="task">
+          <div class="content">
+            <div class="task-text">
+              <h3>task's generator</h3>
+              <h3>Conheça nosso gerador de task's totalmente aleatórias!</h3>
+              <p>Ao clicar em gerar task, você receberá uma task aleatória para cumprir no dia!</p>
+              <p>Mas fique atento(a), a sua task será gerada no <strong>idioma inglês.</strong></p>
+            </div>
+
+            <div class="generate-phrase">
+              <button class="task-btn"  onclick="fetchApiData(), Modal.open()">gerar task</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="back">
+          <p>
+            <a href="/index.html">voltar pra página inicial</a>
+          </p>
+        </div>
+
+        <div class="modal-overlay">
+          <div class="modal">
+            <div class="close">
+              <div class="close-btn">
+                <a href="#" onclick="Modal.close()" class="button cancel">X</a>
+              </div>
+
+            </div>          
+              <abbr>&#127746; &#127752; &#127747;</abbr>
+              <br>
+              <h2>Your task for today is:</h2>
+              
+            </div>
+          </div>
+        </div>
       </main>
     </div>
 
@@ -128,6 +119,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- Script -->
-    <script src="/news.js"></script>
+    <script src="/public/js/news.js"></script>
+    <script src="/public/js/api.js"></script>
   </body>
 </html>

@@ -33,7 +33,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Autor
 
----
 
 <a href="">
  <img style="border-radius: 100%;" src="https://avatars.githubusercontent.com/u/81274077?s=400&u=1bafa9e459f909563635128442aea04975594633&v=4" width="150px;" alt=""/>

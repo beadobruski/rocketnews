@@ -226,7 +226,7 @@ header {
   }
 
   .container .email-form {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .container .email-form form label {
@@ -236,5 +236,9 @@ header {
   .container .email-form .error-text {
     position: relative;
     margin-bottom: 1.5rem;
+  }
+
+  .back {
+    margin-top: 3rem;
   }
 }

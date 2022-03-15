@@ -2,7 +2,7 @@
 const scrollReveal = ScrollReveal({
   origin: 'top',
   duration: 500,
-  reset: false
+  reset: false,
 });
 
 scrollReveal.reveal(
@@ -14,8 +14,7 @@ scrollReveal.reveal(
   { interval: 100, easing: 'ease-out', scale: 0.85 }
 );
 
-/* Script => 
-validação de formulário */
+/* validação de formulário */
 
 const submitButton = document.querySelector('.submit-button');
 const form = document.querySelector('form');
@@ -24,27 +23,31 @@ const emailField = document.querySelector('input[type=email]');
 
 function addError() {
   emailField.classList.add('error-email');
-  errorText.textContent = 'Hey! Você deve inserir um e-mail válido antes de enviá-lo.';
+  errorText.textContent =
+    'Hey! Você deve inserir um e-mail válido antes de enviá-lo.';
 }
 
-function customValidation(event) {
-  const field = event.target;
+function customValidation() {
+  const emailFieldValue = emailField.value;
 
-  // validações do email
-  if (emailField.value === '') {
+  if (emailFieldValue === '') {
     addError();
-  } else if (emailField.value.indexOf('@') == -1 || emailField.value.indexOf('.') == -1 || emailField.value.indexOf('.') - emailField.value.indexOf('@') == 1) {
+  } else if (!checkEmail(emailFieldValue)) {
     addError();
   } else {
+    alert('Boa! Você receberá notícias todo final de semana!');
     form.submit();
   }
-
-  // trocar mensagem de required
-  field.setCustomValidity('Ops, seu e-mail deve ter esse formato: oi@rocketseat.com. Confere aí!');
 }
 
-emailField.addEventListener('invalid', customValidation);
-
-document.querySelector('form').addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
+  customValidation();
 });
+
+// !Regex
+function checkEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}

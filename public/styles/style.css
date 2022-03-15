@@ -117,6 +117,10 @@ header {
   border-left: 10px solid var(--title-color) !important;
 }
 
+.error-email::placeholder {
+  color: var(--error-email-color);
+}
+
 .container .email-form .error-text {
   color: var(--error-email-color);
   font-weight: 700;

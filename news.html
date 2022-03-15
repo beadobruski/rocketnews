@@ -4,128 +4,260 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
 
     <!--  Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Style -->
     <link rel="stylesheet" href="/public/styles/news.css" />
 
     <!-- SwiperJS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-      <!-- Seo -->
-      <link rel="shortcut icon" href="/public/img/favico.svg" type="image/x-icon" />
-      <meta name="author" content="Bea Dobruski" />
-      <meta name="description" content="O RocketNews é um website que dá informações sobre as notícias de programação. Esteja preparado para começar a codar." />
+    <!-- Seo -->
+    <link
+      rel="shortcut icon"
+      href="/public/img/favico.svg"
+      type="image/x-icon"
+    />
+    <meta name="author" content="Bea Dobruski" />
+    <meta
+      name="description"
+      content="O RocketNews é um website que dá informações sobre as notícias de programação. Esteja preparado para começar a codar."
+    />
 
     <title>News - RocketNews.</title>
   </head>
 
   <body>
-    <header>
-      <img src="/public/img/rocketnews.svg" alt="Logo da RocketNews" />
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#"
+          ><img src="./public/img/logo.svg" alt="Logo da RocketNews"
+        /></a>
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="menu-item" href="#home">Home</a></li>
+            <li><a class="menu-item" href="#services">Notícias</a></li>
+            <li><a class="menu-item" href="#cats">Cat's generator</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
     </header>
-    <div class="container">
-      <main>
-        <section>
-          <div class="swiper">
-            <div class="cards swiper-wrapper">
-              <div class="card swiper-slide">
-                <div class="text">
-                  <h3>Como renomear vários arquivos de uma vez usando o terminal</h3>
-                  <p>Suponha que seu projeto tenha uma base de código com 150 arquivos JavaScript e você precisar migrar para TypeScript alterando as extensões dos arquivos. 🤔</p>
-                </div>
-                <a href="https://blog.rocketseat.com.br/como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/ " target="_blank">saiba mais</a>
-              </div>
 
-              <div class="card swiper-slide">
-                <div class="text">
-                  <h3>Upload de imagens no S3 da AWS com Node.js</h3>
-                  <p>Em 10 passos vamos implementar uma API em Node.js que irá fazer upload de imagens em uma pasta temporária no servidor local e também no serviço S3 (Simple Storage Service) da AWS (Amazon Web Services).</p>
-                </div>
-                <a href="https://blog.rocketseat.com.br/upload-de-imagens-no-s3-da-aws-com-node-js/" target="_blank">saiba mais</a>
-              </div>
-
-              <div class="card swiper-slide">
-                <div class="text">
-                  <h3>Construindo App com Mapa usando React Native Maps e MapBox</h3>
-                  <p>Trabalhar com mapas em aplicações móveis é bem divertido e existem vários casos de uso interessantes para aplicar.</p>
-                </div>
-                <a href="https://blog.rocketseat.com.br/construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox/" target="_blank">saiba mais</a>
-              </div>
-
-              <div class="card swiper-slide">
-                <div class="text">
-                  <h3>Criando um Blog com contador de visitas usando NextJS e MongoDB</h3>
-                  <p>Neste post vamos aprender a criar um Blog com NextJS, usando o MongoDB para gerenciar um contador de visitas em cada post e exibir no preview da home page.</p>
-                </div>
-                <a href="https://blog.rocketseat.com.br/criando-um-blog-com-contador-de-visitas-usando-nextjs-e-mongodb/" target="_blank">saiba mais</a>
-              </div>
-
-              <div class="card swiper-slide">
-                <div class="text">
-                  <h3>Mapas com React usando Leaflet</h3>
-                  <p>Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet.</p>
-                </div>
-                <a href="https://blog.rocketseat.com.br/mapas-com-react-usando-leaflet/" target="_blank">saiba mais</a>
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </section>
-
-        <section class="task">
-          <div class="content">
-            <div class="task-text">
-              <h3>task's generator</h3>
-              <h3>Conheça nosso gerador de task's totalmente aleatórias!</h3>
-              <p>Ao clicar em gerar task, você receberá uma task aleatória para cumprir no dia!</p>
-              <p>Mas fique atento(a), a sua task será gerada no <strong>idioma inglês.</strong></p>
-            </div>
-
-            <div class="generate-phrase">
-              <button class="task-btn"  onclick="fetchApiData(), Modal.open()">gerar task</button>
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./public/img/featured-image.png"
+              alt="Mulher sorrindo penteando outra mulher"
+            />
+            <div class="svg">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#8257E5"
+                  d="M32.6,-66.6C36.6,-54.2,30.2,-34,38.9,-21.6C47.5,-9.2,71.2,-4.6,76.3,3C81.4,10.5,68,21,60.3,35.1C52.6,49.1,50.7,66.8,41.6,71.4C32.5,76,16.2,67.7,1.8,64.6C-12.7,61.5,-25.3,63.6,-30.8,56.9C-36.4,50.2,-34.8,34.7,-38.7,23.7C-42.6,12.8,-51.9,6.4,-56.9,-2.8C-61.8,-12.1,-62.2,-24.1,-54.2,-27.8C-46.1,-31.6,-29.5,-27,-19,-35.6C-8.6,-44.2,-4.3,-66.1,5,-74.8C14.3,-83.5,28.7,-79,32.6,-66.6Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
             </div>
           </div>
-        </section>
+          <div class="text">
+            <h2 class="title">
+              Veja o guia definitivo para conquistar seus objetivos como DEV em
+              2022
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+              sed tristique placerat hac.
+            </p>
+            <a class="button" href="#"
+              >Veja mais
+              <img
+                src="./public/img/arrow-right.svg"
+                alt="Ícone seta para a direita"
+            /></a>
+          </div>
+        </div>
+      </section>
 
-        <div class="back">
+      <div class="divider-1"></div>
+
+      <!-- NEWS -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Notícias</h2>
+            <p class="subtitle">
+              Junte-se a milhares de <strong>devs</strong> e acelere na direção
+              dos seus objetivos. Transforme sua carreira em uma jornada de
+              evolução contínua através das melhores tecnologias.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <img
+                src="https://blog.rocketseat.com.br/content/images/size/w1000/2022/02/typescript-linguagem-rocketseat-blog.png"
+                alt="Imagem do logo do TypeScript"
+              />
+              <h3 class="title">
+                TypeScript: por trás do superset de JavaScript
+              </h3>
+              <p>
+                Um conjunto de ferramentas JavaScript que adicionou tipagem e
+                novos recursos na linguagem
+              </p>
+
+              <button class="card-btn">
+                <a
+                  href="https://blog.rocketseat.com.br/typescript-um-superset-de-javascript-que-adicionou-tipagem-e-novos-recursos-na-linguagem/"
+                  target="_blank"
+                >
+                  Saiba mais
+                </a>
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="https://blog.rocketseat.com.br/content/images/size/w1000/2022/02/python-linguagem-rocketseat-blog.png"
+                alt="Imagem do logo do Python"
+              />
+              <h3 class="title">
+                Python: linguagem popular com berço na comédia inglesa
+              </h3>
+              <p>
+                Ocupando o pódio entre as gigantes do mercado, Python conquistou
+                a programação com sua estrutura madura
+              </p>
+
+              <button class="card-btn">
+                <a
+                  href="https://blog.rocketseat.com.br/python-linguagem-popular-com-berco-na-comedia-inglesa/"
+                  target="_blank"
+                >
+                  Saiba mais
+                </a>
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="https://blog.rocketseat.com.br/content/images/size/w1000/2022/02/elixir-linguagem-rocketseat-blog.png"
+                alt="Imagem do logo do Elixir"
+              />
+              <h3 class="title">
+                Elixir: por trás da linguagem de programação brasileira
+              </h3>
+              <p>
+                Criada por José Valim, em 2011, o Elixir é uma abordagem moderna
+                de programação
+              </p>
+
+              <button class="card-btn">
+                <a
+                  href="https://blog.rocketseat.com.br/elixir-por-tras-da-linguagem-de-programacao-brasileira/"
+                  target="_blank"
+                >
+                  Saiba mais
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+    
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="cats">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Cat's generator.</h2>
+            <p class="subtitle">Você é um amante dos gatos? Clique no botão abaixo e veja quantas fotos aleatórias de gatinhos que quiser <strong><3</strong></strong></p>
+
+            <img src="./public/img/nyancat.png" alt="Foto do NyanCat">
+          </header>
+          
+          <div class="cat">
+            <button id="cat-button">
+              Gerar imagem
+            </button>
+
+            <div class="cats-image"></div>
+          </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="back-to-home">
           <p>
             <a href="/index.html">voltar pra página inicial</a>
           </p>
         </div>
+      </section>
 
-        <div class="modal-overlay">
-          <div class="modal">
-            <div class="close">
-              <div class="close-btn">
-                <a href="#" onclick="Modal.close()" class="button cancel">X</a>
-              </div>
+      <div class="divider-1"></div>
+    </main>
 
-            </div>          
-              <abbr>&#127746; &#127752; &#127747;</abbr>
-              <br>
-              <h2>Your task for today is:</h2>
-              
-            </div>
-          </div>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home"
+            ><img
+              src="./public/img/rocketnews.svg"
+              alt="RocketNews logo alternativo"
+          /></a>
+          <p>©2022 RocketNews.</p>
+          <p>Todos os direitos reservados.</p>
         </div>
-      </main>
-    </div>
 
-    <!-- ScrollReveal -->
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- SwiperJS -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Api Js -->
+    <script src="./public/js/api.js"></script>
 
-    <!-- Script -->
-    <script src="/public/js/news.js"></script>
-    <script src="/public/js/api.js"></script>
+    <!-- main.js -->
+    <script src="./public/js/news.js"></script>
   </body>
 </html>

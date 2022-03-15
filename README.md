@@ -22,7 +22,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Features
 
 - [x]  Layout finalizado para Desktop & Mobile (aplicado Mobile First)
-- [x]  Validação de e-mail
+- [x]  Validação de e-mail utilizando REGEX.
 - [x]  Conexão com a The Cat API (https://thecatapi.com/)
 
 ### Biblioteca

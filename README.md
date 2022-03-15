@@ -4,7 +4,7 @@
 # RocketNews 
 
 🚀 O RocketNews é um projeto baseado em um desafio da RocketSeat, no qual deveria ser criado apenas o layout.
-Minha intenção foi estudar mais a fundo e adicionar mais funcionalidades ao layout.
+Minha intenção foi estudar mais a fundo e adicionar mais funcionalidades ao layout. Nas quais: criei uma página de notícias, conectei à uma API externa usando FetchAPI e adicionei funcionalidades com o JavaScript.
 
 
 ## Deploy

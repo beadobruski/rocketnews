@@ -336,7 +336,7 @@ nav.show div.icon-close {
 
 /*====  SERVICES ============================ */
 
-#services strong {
+#news strong {
   color: #8257e5;
 }
 
@@ -451,7 +451,6 @@ nav.show div.icon-close {
 
 /*====  Cat's Generator SECTION ============================ */
 
-
 .cat {
   display: flex;
   flex-direction: column;
@@ -475,7 +474,6 @@ nav.show div.icon-close {
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  
 }
 
 .showcase {

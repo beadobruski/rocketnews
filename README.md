@@ -21,11 +21,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Features
 
-- [x]  Layout finalizado
+- [x]  Layout finalizado para Desktop & Mobile (aplicado Mobile First)
 - [x]  Validação de e-mail
-- [x]  SwiperJS
+- [x]  Conexão com a The Cat API (https://thecatapi.com/)
+
+### Biblioteca
 - [x]  ScrollReveal
-- [x]  Fetch API
 
 ## License
 
